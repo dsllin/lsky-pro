@@ -35,7 +35,6 @@ COPY ./000-default.conf /etc/apache2/sites-enabled/
 COPY entrypoint.sh /
 # COPY ./docker-php.conf /etc/apache2/conf-enabled
 WORKDIR /var/www/html/
-VOLUME /var/www/html
 EXPOSE 80
 RUN chmod a+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
